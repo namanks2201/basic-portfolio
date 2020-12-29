@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --raleway: "Raleway", sans-serif;
+  --opensans: "Open Sans", sans-serif;
+}
+
+.pos-fixed {
+  margin-right: 20px;
+  border-radius: 0px 15px 15px 0px;
+  height: 100%;
+  width: 300px;
+  position: fixed;
+}
+.profile-pic {
+  margin: 0px 0px 20px 45px;
+  padding-top: 40px;
+  height: 240px;
+  width: 200px;
+}
+
+.name {
+  font-family: var(--raleway);
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+  color: #ffffff;
+}
+
+.desg {
+  text-align: center;
+  font-style: italic;
+  font-family: cambria;
+  font-size: 30px;
+  color: #6d7b8d;
+}
+
+.text {
+  margin: 20px 10px 0px 10px;
+  font-family: var(--opensans);
+  color: #ffffff;
+  text-align: center;
+  font-style: italic;
+}
+
+.smedia {
+  display: flex;
+  margin: 30px 10px 0px 10px;
+}
+
+.smedia-icons {
+  height: 35px;
+  width: 35px;
+  margin: 0px 10px 0px 10px;
+}
+
+.smedia-icons:hover {
+  transform: scale(1.25);
+}
+
+.card-sec {
+  margin: 0px 20px 0px 320px;
+  border-radius: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-heading {
+  margin: 0px 0px 20px 0px;
+  font-family: var(--raleway);
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  color: #212353;
+}
+
+.card-subheading {
+  margin: 0px 0px 0px 20px;
+  font-family: var(--opensans);
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+}
+.progress {
+  margin: 10px 20px 10px 20px;
+  font-family: var(--opensans);
+}
+
+.card-sec:hover {
+  transition: 0.1s ease;
+  transform: scale(1.03);
+}
+
+.star {
+  margin: 0px 0px 0px 20px;
+  float: left;
+  height: 20px;
+  width: 20px;
+}
+
+.sec-text {
+  margin: 0px 0px 10px 50px;
+  text-decoration: none;
+}
+
+.link {
+  height: 10px;
+  width: 10px;
+}
+
+.grid-section {
+  margin: 0px 30px 0px 30px;
+}
+.col {
+  border: 1px solid black;
+}
+
+.pdsec-text {
+  margin: 20px;
+}
+
+.links {
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.c-details-sec {
+  margin: 0px 0px 0px 20px;
+}
+
+.cdetails-icons {
+  height: 25px;
+  width: 25px;
+  float: left;
+}
+
+/* \\\\\\\\\\\\\\\\ MEDIA QUERIES \\\\\\\\\\\\\\ */
+
+@media screen and (max-width: 700px) {
+  .pos-fixed {
+    margin-right: 0px;
+    position: relative;
+    width: 100%;
+    height: 110%;
+    border-radius: 0px;
+  }
+
+  .profile-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 290px;
+    width: 250px;
+  }
+
+  .name {
+    font-size: 40px;
+  }
+
+  .text {
+    font-size: 20px;
+    margin: 0px 20px 0px 20px;
+  }
+
+  .smedia {
+    margin: 0 auto;
+    margin: 20px auto 0px auto;
+    width: fit-content;
+  }
+
+  .smedia-icons {
+    margin: 0px 0px 20px 20px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .card-sec {
+    margin: 10px 0px 0px 0px;
+    border-radius: 0px;
+  }
+  .card-sec:hover {
+    transition: none;
+    transform: none;
+  }
+}
